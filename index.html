@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="color.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <!-- step one start-->
+
+      <div class="phase_one">
+        <div id="wrapper">
+          <div class="header">
+            <div class="step1"><a href="index.html">Step1</a></div>
+            <div class="step2"><a href="page2.html">Step2</a></div>
+            <div class="step3"><a href="page3.html">Step3</a></div>
+            <div class="review"><a href="review.html">Review</a></div>
+          </div>
+        <div class="meal_selection">
+          <p>Please select a Meal</p>
+          <select id="three_meal" class="form-select" onchange="getThreeMeal()" aria-label="Default select example">
+            <option selected>---</option>
+            <option value="breakfast" required="">Breakfast</option>
+            <option value="lunch" required="">Lunch</option>
+            <option value="dinner" required="">Dinner</option>
+          </select>
+        </div>
+        <div class="guest_number">
+          <p>Please Enter number of people</p>
+          <select id="guest_quantity" class="form-select" onchange="getGuestQuantity()" aria-label="Default select example">
+            <option selected>---</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div class="next_btn">
+        <button type="button" id="btnOne" class="btn btn-primary" onclick="storeData()">
+            <a href="page2.html">Next</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- step one end-->
+
+     
+
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

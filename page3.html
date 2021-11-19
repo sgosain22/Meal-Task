@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step3</title>
+    <link rel="stylesheet" href="color.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <!-- step three start-->
+
+    <div class="phase_three">
+        <div class="header">
+            <div class="step1"><a href="index.html">Step1</a></div>
+            <div class="step2"><a href="page2.html">Step2</a></div>
+            <div class="step3"><a href="page3.html">Step3</a></div>
+            <div class="review"><a href="review.html">Review</a></div>
+          </div>
+        <div class="select_dish">
+          <p>Please select a Dish</p>
+          <select id="formSelectDish" class="form-select" aria-label="Default select example">
+            <option selected>---</option>
+            <option value="Chicken Burger" required="">Chicken Burger</option>
+            <option value="Chicken" required="">Chicken </option>
+            <option value="Burger" required=""> Burger</option>
+          </select>
+        </div>
+        <div class="serving_number">
+          <p>Please Enter no. of servings</p>
+          <input type="number" />
+        </div>
+        <div class="more_item">
+          <button>Add</button>
+        </div>
+        <div class="phase_three_previous_btn">
+          <button type="button" class="btn btn-primary">
+              <a href="page2.html">Previous</a>
+          </button>
+        </div>
+        <div class="phase_three_next_btn">
+          <button type="button" id="btnThree" class="btn btn-primary" onclick="storelistThree()">
+              <a href="review.html">Next</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- step three end-->
+    </div>
+    <script src="page3.js"></script>
+</body>
+</html>
